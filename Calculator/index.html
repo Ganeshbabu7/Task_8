@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+        <p id="description">Use the below calculator for basic calculations</p>
+        <div id="calculator">
+            <h1 id="title">Calculator</h1>
+
+                <div id="display">
+                    <div id="display1">0</div>
+                </div>
+
+                <div id="numbtn">
+                <input type="text" placeholder="0" id="result" class = "display">
+                <button onclick="Clear()" id="clear" class="btns"> C </button>
+                <button onclick="Del()" id="Del" class="btns"> Del </button>
+                <button onclick="operation('%')" id="%" class="btns"> % </button>
+                <button onclick="operation('/')" id="divide" class="btns"> / </button>
+                <button onclick="display('7')" id="7" class="btns"> 7 </button>
+                <button onclick="display('8')" id="8" class="btns"> 8 </button>
+                <button onclick="display('9')" id="9" class="btns"> 9 </button>
+                <button onclick="operation('*')" id="multiply" class="btns"> x </button>
+                <button onclick="display('4')" id="4" class="btns"> 4 </button>
+                <button onclick="display('5')" id="5" class="btns"> 5 </button>
+                <button onclick="display('6')" id="6" class="btns"> 6 </button>
+                <button onclick="operation('-')" id="subtract" class="btns"> - </button>
+                <button onclick="display('1')" id="1" class="btns"> 1 </button>
+                <button onclick="display('2')" id="2" class="btns"> 2 </button>
+                <button onclick="display('3')" id="3" class="btns"> 3 </button>
+                <button onclick="operation('+')" id="add" class="btns"> + </button>
+                <button onclick="display('00')" id="00" class="btns"> 00 </button>
+                <button onclick="display('0')" id="0" class="btns"> 0 </button>
+                <button onclick="display('.')" id="." class="btns"> . </button>
+                <button onclick="calculate()" id="equal" class="btns"> = </button>
+                </div>
+
+        </div>
+    </div>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

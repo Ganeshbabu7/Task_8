@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <div id="formTable">
+            <form id="form">
+                <h1 id='title'> Registration Form </h1>
+                <h3 id="headings">Personal Details</h3>
+                <div class="form-group">
+                    <div class="formlabel">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Type First Name" id="first-name" required>
+                    </div>
+
+                    <div class="formlabel">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Type Last Name" id="last-name" required>
+                    </div>
+
+                    <div class="formlabel">
+                        <label>Date of Birth</label>
+                        <input type="date" placeholder="Type DOB" id="dateOfBirth">
+                    </div> 
+                </div>   
+
+                <div class="form-group">
+                    <div class="formlabelGender">
+                        <label id="gender">Gender</label>
+                        <div id="radiobtn">
+                            <label> <input type="radio" name='gender' value="Male"> Male </label>
+                            <label> <input type="radio" name='gender' value="Female"> Female </label>
+                        </div>
+                    </div>
+
+                    <div class="formlabel">
+                        <label>Door No</label>
+                        <input type="text" placeholder="Type Door No" id="doorNo">
+                    </div>
+
+                    <div class="formlabel">
+                        <label>Street Name</label>
+                        <textarea placeholder="Type Street Name" id="address" cols="30" rows="1"></textarea>
+                    </div> 
+                </div> 
+
+                <div class="form-group">
+                    <div class="formlabel">
+                        <label>City</label>
+                        <input type="text" placeholder="Select City" id="city">
+                    </div>
+
+                    <div class="formlabel">
+                        <label>State</label>
+                        <input type="text" placeholder="Select State" id="state">
+                    </div>
+
+                    <div class="formlabel">
+                        <label>Country</label>
+                        <input type="select" placeholder="Select Country" id="country">
+                    </div> 
+                </div> 
+                
+                <div class="form-group">
+                    <div class="formlabel">
+                        <label>Pincode</label>
+                        <input type="text" placeholder="Type Pincode" id="pincode" required>
+                    </div>
+
+                    <div class="formlabel">
+                        <label> Fav Food 1</label>
+                        <select name="Food" id="favFood1">
+                            <option value="" selected disabled hidden> </option>
+                            <option value="Mutton">Mutton</option>
+                            <option value="Chicken">Chicken</option>
+                            <option value="Fish">Fish</option>
+                            <option value="Prawn">Audi</option>
+                            <option value="Crab">Crab</option>
+                          </select>
+                    </div>
+    
+                    <div class="formlabel">
+                        <label> Fav Food 2</label>
+                        <select name="Food" id="favFood2">
+                            <option value="" selected disabled hidden> </option>
+                            <option value="Mutton">Mutton</option>
+                            <option value="Chicken">Chicken</option>
+                            <option value="Fish">Fish</option>
+                            <option value="Prawn">Prawn</option>
+                            <option value="Crab">Crab</option>
+                          </select>
+                    </div>
+
+                </div> 
+
+                <div id="button">
+                <button type="button" class="btn btn-primary" id="submit" >Submit</button> 
+                </div>
+            </form>
+            
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                    <th style="width:15%"> First Name </th>
+                    <th style="width:5%"> Last Name </th>   
+                    <th style="width:10%"> Date of Birth </th>
+                    <th style="width:10%"> Gender </th>
+                    <th style="width:20%"> Address </th>
+                    <th style="width:10%"> Pincode </th>
+                    <th style="width:10%"> State </th>
+                    <th style="width:10%"> Country </th>
+                    <th style="width:10%"> Fav Food </th>
+                    </tr>
+                </thead>
+                <tbody class="tbody"> </tbody>
+            </table>
+        </div>
+        <br>
+        <br>
+        <p id='description'> *Kindly fill the form and click on Submit button </p>
+    </div>
+
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>   
